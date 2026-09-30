@@ -11,7 +11,10 @@ elif operacao == "*":
     resultado = numero1 * numero2
     print(resultado)
 elif operacao == "/":
-    resultado = numero1 / numero2
-    print(resultado)
+    if numero2 != 0:
+        resultado = numero1 / numero2
+        print(resultado)
+    else:
+        print("Não é possível dividir por zero")
 else:
     print("operação invalida")
